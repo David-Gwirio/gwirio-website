@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Authorities — Gwirio</title>
+<meta name="description" content="Trust Authorities — an article on Trust Infrastructure from Gwirio.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../articles.html" class="active">Articles</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <a href="../articles.html" class="back-link">&larr; All articles</a>
+    <span class="eyebrow">Trust Infrastructure</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:22ch">Trust Authorities</h1>
+    <div class="article-meta" style="margin-top:14px"><span class="date">7 August 2026</span></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <p>Every trust decision depends on evidence. The real question is where
+that evidence comes from.<br />
+<br />
+Today, every organisation gathers and validates its own information
+before making a decision—even when another trusted organisation has
+already completed the same work.<br />
+<br />
+That duplication isn't just expensive. It prevents trust from becoming
+reusable and cumulative.<br />
+<br />
+The answer isn't for one organisation to know everything.<br />
+<br />
+It's for trusted organisations to be authoritative about the things they
+already know.<br />
+• A bank can confirm your account.<br />
+• A university can confirm your qualifications.<br />
+• A mobile network can confirm control of a phone number and, where
+appropriate, its location.<br />
+• A government agency can confirm an identity or property
+ownership.<br />
+<br />
+Notice what they have in common.<br />
+<br />
+Each is authoritative about a narrow set of facts—and nothing beyond
+them.<br />
+<br />
+Your bank cannot verify your degree.<br />
+Your university cannot verify your salary.<br />
+<br />
+That limitation is precisely what makes them trustworthy.<br />
+A Trust Authority is not another identity provider.<br />
+<br />
+It is an organisation whose assertions, within a clearly defined scope,
+can be relied upon by others without repeating the same verification
+process.<br />
+<br />
+The internet already works this way.<br />
+<br />
+When your browser connects securely to a website, it relies on
+Certificate Authorities operating under shared governance and common
+standards.<br />
+<br />
+Your browser doesn't independently verify every website on the Internet.
+It relies on trusted authorities to perform that work.<br />
+<br />
+The same principle can extend beyond websites.<br />
+<br />
+If trust can be established once by an appropriate authority, it can be
+relied upon many times without rebuilding the same decision.<br />
+<br />
+That is how trust becomes infrastructure.<br />
+<br />
+𝐓𝐫𝐮𝐬𝐭 𝐩𝐫𝐞𝐜𝐞𝐝𝐞𝐬 𝐭𝐫𝐚𝐧𝐬𝐚𝐜𝐭𝐢𝐨𝐧.</p>
+
+    </div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../about.html">About</a>
+      <a href="../articles.html">Articles</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
