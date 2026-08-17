@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Identity — Gwirio</title>
+<meta name="description" content="Identity as one component of trust, not the whole of it.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html" class="active">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Identity, Privacy and Information</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Digital Identity</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Identity systems answer one question reliably. Trust decisions depend on several more.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>In the 2010s, the challenge for digital interaction shifted to validating identity
+      &mdash; before organisations could interact digitally, they needed confidence in who,
+      or what, was on the other end of the connection. Identity systems and modern
+      cryptography became foundational services for the internet, in the same way networks
+      and cloud computing had before them.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">What identity establishes</h2>
+<p>Identity answers one question: who is this? A login can be genuine, a second factor
+      correct, a device recognised &mdash; identity has done its job accurately. But identity
+      was never designed to carry a full trust decision. It is one input into that decision,
+      not the decision itself. See <a href="identity-vs-trust.html">Identity vs Trust</a>
+      for the distinction in full.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="identity-vs-trust.html" style="text-decoration:none;color:inherit">Identity vs Trust</a></h3>
+        <p>Why account takeover shows the limits of identity alone.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="what-is-trust-infrastructure.html" style="text-decoration:none;color:inherit">What Is Trust Infrastructure?</a></h3>
+        <p>How identity fits into the wider model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

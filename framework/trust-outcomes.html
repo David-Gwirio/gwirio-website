@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Outcomes — Gwirio</title>
+<meta name="description" content="A Trust Outcome is the trusted result an authorised consumer can rely upon after relevant claims, evidence, controls and context have been evaluated — not the underlying data used to establish it.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html" class="active">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Gwirio Trust Framework</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Trust Outcomes</h1>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+    <div style="border-left:3px solid var(--verify);background:var(--paper-raised);padding:18px 22px;margin:28px 0;font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.5">
+      A Trust Outcome is the trusted result that an authorised consumer can rely upon after relevant claims, evidence, controls and context have been evaluated.
+    </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <figure style="margin:32px 0">
+      <img src="../assets/diagrams/information-to-trust.jpg" alt="Diagram showing the progression from Information, through Authoritative Validation, to a Trust Assertion, to a Trust Outcome, to a Decision — a trusted answer rather than an unnecessary data exchange." style="width:100%;max-width:900px;border:1px solid var(--line);border-radius:6px;display:block;margin:0 auto">
+    </figure>
+    <div class="article-body" style="max-width:70ch">
+      <p>The progression runs:</p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:.92rem;background:var(--paper-raised);border:1px solid var(--line);padding:16px 20px;border-radius:4px">
+      Underlying Information &rarr; Validation / Verification &rarr; Trust Assertion &rarr; Trust Outcome &rarr; Decision
+      </p>
+      <p>Underlying information is validated or verified by an authoritative source. That
+      validation is issued as a Trust Assertion, carrying the context &mdash; authority,
+      purpose, scope, validity &mdash; needed to determine whether it can be relied upon.
+      Once evaluated against relevant policy and context, the assertion produces a Trust
+      Outcome: a specific, bounded answer such as identity verified, authority established,
+      consent established, or eligibility confirmed. That outcome is what a Trust Consumer
+      actually uses to support its decision.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div style="border-left:3px solid var(--verify);background:var(--paper-raised);padding:18px 22px;margin:28px 0;font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.5">
+      The consumer does not necessarily need the underlying information. It needs a trustworthy answer to the question it must decide.
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:16px">
+      <span class="eyebrow">Related</span>
+      <h2 style="font-size:1.2rem">Continue reading</h2>
+    </div>
+      <a href="trust-assertions.html" style="display:block;color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.82rem;margin-bottom:8px">Trust Assertions &rarr;</a>
+      <a href="../bok/trust-exchange.html" style="display:block;color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.82rem;margin-bottom:8px">Trust Exchange &rarr;</a>
+      <a href="../bok/privacy-and-trust-infrastructure.html" style="display:block;color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.82rem;margin-bottom:8px">Privacy and Trust Infrastructure &rarr;</a>
+      <a href="../bok/trust-decision-engine.html" style="display:block;color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.82rem;margin-bottom:8px">Trust Decision Engine &rarr;</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

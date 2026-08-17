@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MNO Trust Infrastructure — Gwirio</title>
+<meta name="description" content="How GSMA Open Gateway APIs function as a mechanism for moving trusted outcomes between mobile networks and other organisations.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html" class="active">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Trust and Fraud</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">MNO Trust Infrastructure</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Mobile networks already hold, and are beginning to expose, information other organisations need to verify.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>Mobile networks have spent decades building infrastructure for communication. In the
+      process, they have also become authoritative about a narrow set of facts other
+      organisations independently need to check: who controls a phone number, whether a SIM
+      has recently changed, whether a number is active, whether a device is the one normally
+      associated with a customer, and whether customer information matches what the operator
+      holds.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Today, everyone checks separately</h2>
+<p>Banks, insurers, merchants and government services each build their own process
+      around information that may already be authoritative somewhere else &mdash; sometimes
+      sharing portions of it, increasing both exposure and risk in the process.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">GSMA Open Gateway</h2>
+<p>The GSMA Open Gateway initiative is making mobile network capabilities available to
+      other organisations in a standardised way, through APIs including Number Verification,
+      SIM Swap, KYC Match, device information and location verification. These are usually
+      described as APIs, but they function as a mechanism for moving trusted outcomes
+      between organisations: the MNO does not disclose everything it knows, only answers a
+      specific question within the area where it is authoritative. In South Africa, operators
+      have already introduced standard Number Verification and SIM Swap APIs that let banks
+      verify customer information directly with mobile networks, rather than each institution
+      solving the problem independently.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">MNOs as Trust Authorities</h2>
+<p>A bank does not necessarily need a copy of an MNO's customer database or government
+      records &mdash; it may simply need to know whether the person requesting a transaction
+      controls the number associated with the account. An insurer may need a trusted answer
+      to a specific question rather than access to the underlying network information. That
+      narrow, well-defined authority is what could make MNOs important Trust Authorities in
+      the digital economy: not because they know everything, but because they are
+      authoritative about specific things they already know.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../framework/trust-authorities.html" style="text-decoration:none;color:inherit">Trust Authorities</a></h3>
+        <p>What makes an organisation authoritative, in general.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../applications/telecommunications.html" style="text-decoration:none;color:inherit">Telecommunications</a></h3>
+        <p>The application of this thinking, mapped to a trust-problem framework.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../articles/gsma.html" style="text-decoration:none;color:inherit">GSMA, MNOs and the Trust Economy</a></h3>
+        <p>The original essay this page is drawn from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

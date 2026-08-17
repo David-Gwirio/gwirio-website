@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Certificates — Gwirio</title>
+<meta name="description" content="How an Information Certificate certifies a lawful information relationship without containing the sensitive information itself.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html" class="active">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Trust Technology</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Information Certificates</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">The certified, machine-readable record of a lawful relationship between information, the parties involved, and what may be done with it.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>An Information Certificate can be defined from three angles, each accurate on its
+      own terms. Technically, it is a cryptographically signed trust object certifying the
+      lawful relationship between information, parties and authorised actions. As a
+      governance tool, it is a record that provides visibility, accountability and
+      governance over the use of personal information. To the person the information is
+      about, it is a transparent record of who holds their information, what information,
+      why, for how long, and what control they retain over it.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">What distinguishes it from a data record</h2>
+<p>An Information Certificate does not contain the sensitive personal information
+      itself. It certifies the relationship around that information: which organisation
+      holds it, which categories of information are involved, which actions are permitted
+      (storage, processing, communication), the validity period, and the controls available
+      to the person the information concerns.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Two different relationships it can certify</h2>
+<p>Not every certified relationship starts the same way. In some cases, a person is
+      asked to approve a new relationship before it exists &mdash; a marketing opt-in, for
+      example. In others, the relationship already exists, established by a contract, a
+      legal obligation or another lawful basis &mdash; a bank account, an employment
+      contract, an insurance policy, a SIM registration. In that second, more common case,
+      the certificate does not create the relationship; it certifies, governs and makes an
+      already-existing relationship visible to the person it concerns, rather than asking
+      them to approve something that has already lawfully begun.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Why this matters for governance</h2>
+<p>Under data protection law generally &mdash; and POPIA specifically in South Africa
+      &mdash; consent is only one lawful basis for processing personal information, alongside
+      contractual necessity, legal obligation, legitimate interest and vital interests. Most
+      personal information in the economy is already held under one of the non-consent
+      bases. An Information Certificate gives that relationship a governed, auditable,
+      person-visible form regardless of which lawful basis it rests on.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="consent-and-trust.html" style="text-decoration:none;color:inherit">Consent and Trust</a></h3>
+        <p>Why consent is one lawful basis among several, not the whole of the decision.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="trust-certificates.html" style="text-decoration:none;color:inherit">Trust Certificates</a></h3>
+        <p>The general concept an Information Certificate applies to a whole relationship.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="privacy-and-trust-infrastructure.html" style="text-decoration:none;color:inherit">Privacy and Trust Infrastructure</a></h3>
+        <p>The data-minimisation principle behind certifying a relationship rather than exposing the data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

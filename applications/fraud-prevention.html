@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Prevention — Gwirio Applications</title>
+<meta name="description" content="How reusable trust outcomes from authoritative sources could reduce duplicated, fraud-prone verification.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html" class="active">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Applications</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Fraud Prevention</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Fraud can, in part, be understood as a failure of trust between participants, not only a failure of security controls.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem;margin-top:1.6em">The trust problem</h2>
+<p>SABRIC recorded R2.7 billion in confirmed financial crime losses in South Africa
+      during 2024. Identity controls can all return "verified" &mdash; correct credentials,
+      correct second factor, recognised device &mdash; and a transaction can still be
+      fraudulent, because identity answers only one question while a trust decision depends
+      on several more.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">What trusted outcome is required</h2>
+<p>Confirmation of facts an authoritative organisation already holds &mdash; such as
+      whether a SIM has recently changed, or whether a transaction is consistent with an
+      established banking relationship &mdash; rather than each organisation independently
+      reconstructing the same check.</p>
+      <p style="margin-top:2em;font-size:.85rem;color:var(--muted)">This page does not claim a specific fraud-reduction outcome for any Gwirio deployment. It describes a proposed application of Trust Infrastructure, drawing on published fraud statistics and existing GSMA and banking material.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../bok/digital-fraud.html" style="text-decoration:none;color:inherit">Digital Fraud (BOK)</a></h3>
+        <p>The underlying concepts in full.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../bok/mno-trust-infrastructure.html" style="text-decoration:none;color:inherit">MNO Trust Infrastructure (BOK)</a></h3>
+        <p>How mobile network data already supports SIM swap and number checks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

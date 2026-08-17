@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Authorities — Gwirio</title>
+<meta name="description" content="Why the answer to the trust gap is authoritative organisations, each narrow in scope, rather than one organisation that knows everything.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../bok/index.html">Trust Infrastructure BOK</a>
+      <a href="../framework/index.html" class="active">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="cta-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Gwirio Trust Framework</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Trust Authorities</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">An organisation that can authoritatively validate identity, authority, consent, legitimacy or another defined claim.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>Every trust decision depends on evidence, and the real question is where that
+      evidence comes from. Today, every organisation gathers and validates its own
+      information before making a decision &mdash; even when another trusted organisation
+      has already completed the same work. That duplication is not just expensive. It
+      prevents trust from becoming reusable and cumulative.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Authoritative about a narrow scope</h2>
+<p>The answer is not for one organisation to know everything. It is for trusted
+      organisations to be authoritative about the things they already know: a bank can
+      confirm your account, a university can confirm your qualifications, a mobile network
+      can confirm control of a phone number and, where appropriate, its location, and a
+      government agency can confirm an identity or property ownership. Each is authoritative
+      about a narrow set of facts, and nothing beyond them &mdash; your bank cannot verify
+      your degree, and your university cannot verify your salary. That limitation is
+      precisely what makes them trustworthy.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Not another identity provider</h2>
+<p>A Trust Authority is not another identity provider. It is an organisation whose
+      assertions, within a clearly defined scope, can be relied upon by others without
+      repeating the same verification process. The internet already works this way &mdash;
+      when a browser connects securely to a website, it relies on Certificate Authorities
+      operating under shared governance and common standards, rather than independently
+      verifying every website itself. The same principle can extend beyond websites: if
+      trust can be established once by an appropriate authority, it can be relied upon many
+      times without rebuilding the same decision.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="trust-assertions.html" style="text-decoration:none;color:inherit">Trust Assertions</a></h3>
+        <p>What a Trust Authority actually issues.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="../bok/mno-trust-infrastructure.html" style="text-decoration:none;color:inherit">MNO Trust Infrastructure</a></h3>
+        <p>A worked example of a potential Trust Authority.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="../bok/index.html">BOK</a>
+      <a href="../framework/index.html">Trust Framework</a>
+      <a href="../applications/index.html">Applications</a>
+      <a href="../articles.html">Research</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
