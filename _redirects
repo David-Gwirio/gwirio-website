@@ -6,10 +6,27 @@
 /framework/                                    /knowledge/framework/                          301
 /framework/*                                   /knowledge/framework/:splat                    301
 
-# Old Research/Articles URLs -> new Knowledge/Research URLs
-/articles.html                                 /knowledge/research/                           301
-/articles/                                     /knowledge/research/                           301
-/articles/*                                    /knowledge/research/:splat                     301
+# Old Research/Articles URLs -> now live under Knowledge/Blog
+/articles.html                                 /knowledge/blog/                               301
+/articles/                                     /knowledge/blog/                               301
+/articles/*                                    /knowledge/blog/:splat                         301
+
+# Articles moved from Knowledge/Research to Knowledge/Blog
+/knowledge/research/intro-1.html               /knowledge/blog/intro-1.html                   301
+/knowledge/research/intro-2.html               /knowledge/blog/intro-2.html                   301
+/knowledge/research/part-1.html                /knowledge/blog/part-1.html                    301
+/knowledge/research/part-2.html                /knowledge/blog/part-2.html                    301
+/knowledge/research/part-3.html                /knowledge/blog/part-3.html                    301
+/knowledge/research/part-4.html                /knowledge/blog/part-4.html                    301
+/knowledge/research/part-5.html                /knowledge/blog/part-5.html                    301
+/knowledge/research/part-6.html                /knowledge/blog/part-6.html                    301
+/knowledge/research/part-7.html                /knowledge/blog/part-7.html                    301
+/knowledge/research/part-8.html                /knowledge/blog/part-8.html                    301
+/knowledge/research/part-9.html                /knowledge/blog/part-9.html                    301
+/knowledge/research/part-10.html               /knowledge/blog/part-10.html                   301
+/knowledge/research/epilogue.html              /knowledge/blog/epilogue.html                  301
+/knowledge/research/bank.html                  /knowledge/blog/bank.html                      301
+/knowledge/research/gsma.html                  /knowledge/blog/gsma.html                      301
 
 # Old Applications URLs -> new Solutions structure
 /applications/ai-autonomous-systems.html       /solutions/ai-autonomous-transactions/          301
