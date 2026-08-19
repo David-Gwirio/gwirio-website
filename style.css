@@ -141,12 +141,11 @@ nav.site-nav a.cta-link:hover{border-color:var(--verify);background:var(--verify
   position:absolute;inset:0;
   z-index:0;
   pointer-events:none;
-  background-repeat:no-repeat,no-repeat,no-repeat;
-  background-position:right top,right top,right top;
-  background-size:100% 100%,100% 100%,900px auto;
+  background-repeat:no-repeat,no-repeat;
+  background-position:center top,right top;
+  background-size:100% 100%,1500px auto;
   background-image:
-    linear-gradient(to left, transparent 0%, transparent 50%, var(--paper) 82%),
-    linear-gradient(to bottom, transparent 0%, transparent 45%, var(--paper) 78%),
+    linear-gradient(to bottom, rgba(238,242,245,.72) 0%, rgba(238,242,245,.72) 60%, var(--paper) 100%),
     url('/assets/hero-network.png');
 }
 .hero-graphic > .wrap{position:relative;z-index:1}
