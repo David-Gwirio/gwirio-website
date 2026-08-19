@@ -135,23 +135,19 @@ nav.site-nav a.cta-link:hover{border-color:var(--verify);background:var(--verify
 
 .hero-graphic{
   position:relative;
-  isolation:isolate;
 }
 .hero-graphic::before{
   content:"";
   position:absolute;inset:0;
   z-index:0;
-  background-image:url('/assets/hero-network.png');
-  background-repeat:no-repeat;
-  background-position:right top;
-  background-size:900px auto;
-  -webkit-mask-image:linear-gradient(to left, rgba(0,0,0,.9) 0%, rgba(0,0,0,.5) 45%, transparent 75%),
-                      linear-gradient(to bottom, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 55%, transparent 100%);
-  -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(to left, rgba(0,0,0,.9) 0%, rgba(0,0,0,.5) 45%, transparent 75%),
-              linear-gradient(to bottom, rgba(0,0,0,.9) 0%, rgba(0,0,0,.9) 55%, transparent 100%);
-  mask-composite:intersect;
-  opacity:.8;
+  pointer-events:none;
+  background-repeat:no-repeat,no-repeat,no-repeat;
+  background-position:right top,right top,right top;
+  background-size:100% 100%,100% 100%,900px auto;
+  background-image:
+    linear-gradient(to left, transparent 0%, transparent 50%, var(--paper) 82%),
+    linear-gradient(to bottom, transparent 0%, transparent 45%, var(--paper) 78%),
+    url('/assets/hero-network.png');
 }
 .hero-graphic > .wrap{position:relative;z-index:1}
 @media (max-width:900px){
