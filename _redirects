@@ -1,0 +1,22 @@
+# Old BOK URLs -> new Knowledge/BOK URLs
+/bok/                                          /knowledge/bok/                                301
+/bok/*                                         /knowledge/bok/:splat                          301
+
+# Old Framework URLs -> new Knowledge/Framework URLs
+/framework/                                    /knowledge/framework/                          301
+/framework/*                                   /knowledge/framework/:splat                    301
+
+# Old Research/Articles URLs -> new Knowledge/Research URLs
+/articles.html                                 /knowledge/research/                           301
+/articles/                                     /knowledge/research/                           301
+/articles/*                                    /knowledge/research/:splat                     301
+
+# Old Applications URLs -> new Solutions structure
+/applications/ai-autonomous-systems.html       /solutions/ai-autonomous-transactions/          301
+/applications/fraud-prevention.html            /solutions/fraud-risk/                          301
+/applications/financial-services.html          /solutions/scenarios/financial-services.html    301
+/applications/telecommunications.html          /solutions/scenarios/telecommunications.html    301
+/applications/insurance.html                   /solutions/scenarios/insurance.html              301
+/applications/government.html                  /solutions/scenarios/government.html            301
+/applications/digital-commerce.html            /solutions/scenarios/digital-commerce.html      301
+/applications/                                 /solutions/                                     301

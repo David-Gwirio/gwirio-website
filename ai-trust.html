@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Trust — Gwirio</title>
+<meta name="description" content="Why AI systems multiply trust decisions rather than removing the need for them, and what an AI system should be able to answer before acting.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="/index.html" class="brand">
+      <img src="/assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="/index.html" data-path="/index.html">Home</a>
+      <div class="nav-item has-submenu">
+        <a href="/knowledge/" class="nav-parent" data-path="/knowledge/">Knowledge</a>
+        <div class="submenu">
+          <a href="/knowledge/bok/">Trust Infrastructure BOK</a>
+          <a href="/knowledge/framework/">Trust Framework</a>
+          <a href="/knowledge/research/">Research</a>
+          <a href="/knowledge/blog/">Blog</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/solutions/" class="nav-parent" data-path="/solutions/">Solutions</a>
+        <div class="submenu">
+          <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
+          <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
+          <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
+          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
+          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/engage/" class="nav-parent" data-path="/engage/">Engage</a>
+        <div class="submenu">
+          <a href="/engage/advisory/">Trust Advisory</a>
+          <a href="/engage/assessment/">Trust Architecture Assessment</a>
+          <a href="/engage/pilot/">Trust Infrastructure Pilot</a>
+          <a href="/engage/partnerships/">Partnerships</a>
+        </div>
+      </div>
+      <a href="/about.html" data-path="/about.html">About</a>
+      <a href="/contact.html" class="cta-link" data-path="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Trust and AI</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">AI Trust</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">AI systems do not remove the need for trust decisions. They multiply them.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>For decades, the assumed way to establish trust has been to exchange more
+      information &mdash; request more documents, collect more personal data, build another
+      database. That approach does not scale to AI. Most organisations do not need the
+      underlying data itself; they need confidence in the answer and in the trust decision
+      being made.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Why AI increases the need for trust</h2>
+<p>For years, people made most trust decisions: reviewing documents, approving
+      transactions, verifying customers, checking exceptions. AI systems are beginning to
+      make recommendations, approve requests, initiate transactions and act on behalf of
+      organisations. An AI system can process thousands of requests in the time it takes a
+      person to review one &mdash; if every decision still requires rebuilding trust from
+      scratch, the bottleneck simply moves from people to information.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">What an AI system should be able to answer</h2>
+<p>Before acting, an AI system should be able to answer the same questions a human
+      decision-maker would ask: who made this claim, is the source authoritative, is the
+      information still valid, am I authorised to act, is this appropriate for this purpose,
+      and should this information be processed at all. The quality of an AI system's
+      decisions depends on the quality of the trust and guidance it receives &mdash; faster
+      decisions are only better when they are also better informed.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Built for people and AI together</h2>
+<p>Trust Infrastructure is not being built for AI specifically. It is being built for a
+      digital economy where both people and AI increasingly rely on the same trusted
+      outcomes, because intelligence without trust simply scales uncertainty.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="trust-infrastructure-digital-economy.html" style="text-decoration:none;color:inherit">Trust Infrastructure for the Digital Economy</a></h3>
+        <p>The wider economic argument.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="delegated-authority.html" style="text-decoration:none;color:inherit">Delegated Authority</a></h3>
+        <p>What it means for an AI agent to act within delegated authority.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="/solutions/ai-autonomous-transactions/" style="text-decoration:none;color:inherit">AI and Autonomous Systems</a></h3>
+        <p>How this applies as an application area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/engage/">Engage</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

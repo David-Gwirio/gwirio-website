@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Certificates — Gwirio</title>
+<meta name="description" content="What a Trust Certificate is, what it can validate, and how it differs from sharing the underlying data.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="/index.html" class="brand">
+      <img src="/assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="/index.html" data-path="/index.html">Home</a>
+      <div class="nav-item has-submenu">
+        <a href="/knowledge/" class="nav-parent" data-path="/knowledge/">Knowledge</a>
+        <div class="submenu">
+          <a href="/knowledge/bok/">Trust Infrastructure BOK</a>
+          <a href="/knowledge/framework/">Trust Framework</a>
+          <a href="/knowledge/research/">Research</a>
+          <a href="/knowledge/blog/">Blog</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/solutions/" class="nav-parent" data-path="/solutions/">Solutions</a>
+        <div class="submenu">
+          <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
+          <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
+          <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
+          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
+          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/engage/" class="nav-parent" data-path="/engage/">Engage</a>
+        <div class="submenu">
+          <a href="/engage/advisory/">Trust Advisory</a>
+          <a href="/engage/assessment/">Trust Architecture Assessment</a>
+          <a href="/engage/pilot/">Trust Infrastructure Pilot</a>
+          <a href="/engage/partnerships/">Partnerships</a>
+        </div>
+      </div>
+      <a href="/about.html" data-path="/about.html">About</a>
+      <a href="/contact.html" class="cta-link" data-path="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Trust Technology</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Trust Certificates</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">A governed, auditable and time-bound digital record confirming that a specific trust attribute has been validated by a Trust Authority.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>A Trust Certificate provides evidence that a trust validation occurred, under
+      defined authority, for a specific purpose and at a specific point in time. It does not
+      contain the underlying personal information behind the validation &mdash; it certifies
+      that the validation happened, and on what terms.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">What it can validate</h2>
+<p>Trust Certificates may be used to confirm identity, number ownership, consent,
+      authority, contactability, SIM status, or other trust attributes &mdash; any specific,
+      bounded question a Trust Authority is positioned to answer.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">How a certificate is produced</h2>
+<p>A Trust Certificate is assembled once a validation request has passed through
+      governance: the requester's authority to ask the question is checked, a lawful basis
+      for the query is confirmed, the request is sent to the relevant Trust Authority
+      containing only the minimum needed to ask the question, and the Trust Authority
+      responds with an outcome &mdash; not raw data. That outcome is then assembled into a
+      signed certificate carrying its type, issuance timestamp, expiry window, and the
+      purpose it was issued for, and delivered to the Trust Consumer. The consumer applies
+      its own risk policy on top &mdash; the certificate informs the decision, it does not
+      make it.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Why this differs from a data export</h2>
+<p>A Trust Certificate is evidence, not information. It is governed, auditable,
+      time-bound and revocable, in the same way a certificate of any kind should be &mdash;
+      rather than a static copy of a record that, once shared, is out of the issuer's
+      control.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="/knowledge/framework/trust-assertions.html" style="text-decoration:none;color:inherit">Trust Assertions</a></h3>
+        <p>The underlying concept a certificate makes machine-verifiable.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="trust-decision-engine.html" style="text-decoration:none;color:inherit">Trust Decision Engine</a></h3>
+        <p>How a certificate gets produced and evaluated.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="information-certificates.html" style="text-decoration:none;color:inherit">Information Certificates</a></h3>
+        <p>How this idea extends to certifying an entire information relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/engage/">Engage</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

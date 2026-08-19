@@ -5,30 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gwirio — Trust Infrastructure</title>
 <meta name="description" content="Gwirio builds Trust Infrastructure: the verification layer that lets organisations rely on trust that has already been established.">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <header class="site">
   <div class="site-bar">
-    <a href="index.html" class="brand">
-      <img src="assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+    <a href="/index.html" class="brand">
+      <img src="/assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
       <span class="brand-name">Gwirio</span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
     <nav class="site-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="bok/index.html">Trust Infrastructure BOK</a>
-      <a href="framework/index.html">Trust Framework</a>
-      <a href="applications/index.html">Applications</a>
-      <a href="articles.html">Research</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="cta-link">Contact</a>
+      <a href="/index.html" data-path="/index.html">Home</a>
+      <div class="nav-item has-submenu">
+        <a href="/knowledge/" class="nav-parent" data-path="/knowledge/">Knowledge</a>
+        <div class="submenu">
+          <a href="/knowledge/bok/">Trust Infrastructure BOK</a>
+          <a href="/knowledge/framework/">Trust Framework</a>
+          <a href="/knowledge/research/">Research</a>
+          <a href="/knowledge/blog/">Blog</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/solutions/" class="nav-parent" data-path="/solutions/">Solutions</a>
+        <div class="submenu">
+          <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
+          <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
+          <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
+          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
+          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/engage/" class="nav-parent" data-path="/engage/">Engage</a>
+        <div class="submenu">
+          <a href="/engage/advisory/">Trust Advisory</a>
+          <a href="/engage/assessment/">Trust Architecture Assessment</a>
+          <a href="/engage/pilot/">Trust Infrastructure Pilot</a>
+          <a href="/engage/partnerships/">Partnerships</a>
+        </div>
+      </div>
+      <a href="/about.html" data-path="/about.html">About</a>
+      <a href="/contact.html" class="cta-link" data-path="/contact.html">Contact</a>
     </nav>
   </div>
 </header>
 <section class="register">
   <div class="hero wrap">
-    <img src="assets/gwirio-icon.png" alt="" class="hero-mark">
+    <img src="/assets/gwirio-icon.png" alt="" class="hero-mark">
     <span class="eyebrow">Trust Infrastructure</span>
     <h1>Trust precedes transaction.</h1>
     <p class="lede">
@@ -44,11 +69,13 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">What we do</span>
-      <h2>A platform for trusted assertions</h2>
-      <p>Gwirio has built a platform that enables organisations to issue trusted
-      assertions &mdash; carrying their own evidence of origin, authority, purpose,
-      integrity and validity &mdash; so that other organisations can verify and rely
-      on them without repeating the same work.</p>
+      <h2>A platform for trust and data lifecycle management</h2>
+      <p>Gwirio has developed and tested a platform for trust assertions, consent
+      management, privacy management and data lifecycle management, including a
+      Data Owner Portal and a Data Subject Portal for issuing and reviewing
+      privacy certificates, revoking consent, and viewing issued certificates,
+      with compliance reporting across multiple segments for a company. The full
+      trust assertion process can be demonstrated on request.</p>
     </div>
     <div class="grid-3">
       <div class="card">
@@ -81,7 +108,7 @@
       <p>A structured explanation of Trust Infrastructure &mdash; concepts, technology,
       applications and Gwirio's own Trust Framework.</p>
     </div>
-    <p><a href="bok/index.html" style="color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.85rem">Explore the BOK &rarr;</a></p>
+    <p><a href="/knowledge/bok/" style="color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.85rem">Explore the BOK &rarr;</a></p>
   </div>
 </section>
 
@@ -96,7 +123,7 @@
       <div class="entry">
         <span class="code">ART.01</span>
         <div>
-          <a class="entry-link" href="articles/epilogue.html">
+          <a class="entry-link" href="/knowledge/research/epilogue.html">
             <h3>Why We Built Gwirio</h3>
             <p>Over the past decade, I've worked on privacy, identity, consent and information governance. The more we explored these disciplines, the…</p>
           </a>
@@ -106,7 +133,7 @@
       <div class="entry">
         <span class="code">ART.02</span>
         <div>
-          <a class="entry-link" href="articles/part-10.html">
+          <a class="entry-link" href="/knowledge/research/part-10.html">
             <h3>Building the Trust Economy</h3>
             <p>Every generation builds the infrastructure its economy requires. We built railroads and roads to move goods. We built power grids to…</p>
           </a>
@@ -116,7 +143,7 @@
       <div class="entry">
         <span class="code">ART.03</span>
         <div>
-          <a class="entry-link" href="articles/part-9.html">
+          <a class="entry-link" href="/knowledge/research/part-9.html">
             <h3>Trust Must Become Exchangeable</h3>
             <p>For years, people made most trust decisions. They reviewed documents. Approved transactions. Verified customers. Checked exceptions. This…</p>
           </a>
@@ -124,19 +151,18 @@
         <span class="date">12 August 2026</span>
       </div>
     </div>
-    <p style="margin-top:24px"><a href="articles.html" style="color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.85rem">View all articles &rarr;</a></p>
+    <p style="margin-top:24px"><a href="/knowledge/research/" style="color:var(--verify);text-decoration:none;font-family:'IBM Plex Mono',monospace;font-size:.85rem">View all articles &rarr;</a></p>
   </div>
 </section>
 <footer class="site">
   <div class="wrap footer-row">
     <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
     <div class="footer-links">
-      <a href="bok/index.html">BOK</a>
-      <a href="framework/index.html">Trust Framework</a>
-      <a href="applications/index.html">Applications</a>
-      <a href="articles.html">Research</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/engage/">Engage</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </div>
 </footer>

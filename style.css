@@ -74,6 +74,29 @@ nav.site-nav a.cta-link:hover{border-color:var(--verify);background:var(--verify
 
 .nav-toggle{display:none;background:none;border:1px solid var(--line-strong);border-radius:4px;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:.8rem;cursor:pointer}
 
+/* ---- Nav dropdowns (Knowledge / Solutions / Engage) ---- */
+.nav-item.has-submenu{position:relative;display:flex;align-items:center}
+.nav-item.has-submenu > .nav-parent{position:relative}
+.nav-item.has-submenu > .nav-parent::after{content:"";display:inline-block;margin-left:5px;
+  border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid var(--muted);
+  vertical-align:middle}
+.submenu{
+  display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:240px;
+  background:var(--paper-raised);border:1px solid var(--line-strong);border-radius:4px;
+  box-shadow:0 12px 28px rgba(10,31,68,.12);padding:8px 0;z-index:30;
+}
+.submenu a{display:block;padding:10px 18px;font-size:.86rem;border-bottom:none!important;white-space:normal}
+.submenu a:hover{background:var(--paper);color:var(--verify)}
+.nav-item.has-submenu:hover .submenu{display:block}
+@media (max-width:900px){
+  .nav-item.has-submenu{flex-direction:column;align-items:stretch}
+  .nav-item.has-submenu > .nav-parent::after{float:right;margin-top:6px}
+  .submenu{display:none;position:static;box-shadow:none;border:none;border-top:1px solid var(--line);
+    border-radius:0;background:var(--paper);padding:0}
+  .nav-item.has-submenu.open .submenu{display:block}
+  .submenu a{padding:12px 40px}
+}
+
 @media (max-width:900px){
   nav.site-nav{
     display:none;flex-direction:column;gap:0;align-items:stretch;
@@ -155,20 +178,19 @@ dl.contact-list div{padding:14px 0;border-top:1px solid var(--line)}
 dl.contact-list dt{font-family:'IBM Plex Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
 dl.contact-list dd{margin:4px 0 0;font-size:1rem}
 
-form.contact-form{display:flex;flex-direction:column;gap:16px}
-form.contact-form label{font-family:'IBM Plex Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:6px}
-form.contact-form input,form.contact-form textarea{
-  width:100%;border:1px solid var(--line-strong);background:var(--paper-raised);
-  padding:12px 14px;font-family:'Inter',sans-serif;font-size:.95rem;border-radius:3px;color:var(--ink);
+.contact-routes{display:flex;flex-direction:column;gap:2px}
+.contact-route{
+  display:block;padding:18px 20px;border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--paper-raised);text-decoration:none;color:var(--ink);margin-bottom:10px;
+  transition:border-color .15s ease,background .15s ease;
 }
-form.contact-form input:focus,form.contact-form textarea:focus{outline:2px solid var(--verify);outline-offset:1px}
-form.contact-form button{
-  align-self:flex-start;background:var(--ink);color:var(--paper);border:none;
-  padding:13px 26px;font-family:'IBM Plex Mono',monospace;font-size:.82rem;letter-spacing:.06em;
-  text-transform:uppercase;cursor:pointer;border-radius:3px;
+.contact-route:hover,.contact-route:focus-visible{border-color:var(--verify);background:var(--paper)}
+.contact-route .route-title{
+  display:block;font-family:'IBM Plex Mono',monospace;font-size:.82rem;letter-spacing:.03em;
+  text-transform:uppercase;color:var(--ink);margin-bottom:6px;
 }
-form.contact-form button:hover{background:var(--verify)}
-form.contact-form button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--verify);outline-offset:2px}
+.contact-route .route-desc{display:block;font-size:.9rem;color:var(--muted);line-height:1.5}
+a:focus-visible{outline:2px solid var(--verify);outline-offset:2px}
 
 /* ---- Footer ---- */
 footer.site{border-top:1px solid var(--line);padding:34px 0;background:var(--paper-raised)}

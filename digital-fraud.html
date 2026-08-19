@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Fraud — Gwirio</title>
+<meta name="description" content="Why account takeover and duplicated verification both point to trust decisions, not just security controls, as the source of fraud risk.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="site-bar">
+    <a href="/index.html" class="brand">
+      <img src="/assets/gwirio-icon.png" alt="Gwirio" class="logo-icon">
+      <span class="brand-name">Gwirio</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="/index.html" data-path="/index.html">Home</a>
+      <div class="nav-item has-submenu">
+        <a href="/knowledge/" class="nav-parent" data-path="/knowledge/">Knowledge</a>
+        <div class="submenu">
+          <a href="/knowledge/bok/">Trust Infrastructure BOK</a>
+          <a href="/knowledge/framework/">Trust Framework</a>
+          <a href="/knowledge/research/">Research</a>
+          <a href="/knowledge/blog/">Blog</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/solutions/" class="nav-parent" data-path="/solutions/">Solutions</a>
+        <div class="submenu">
+          <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
+          <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
+          <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
+          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
+          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
+        </div>
+      </div>
+      <div class="nav-item has-submenu">
+        <a href="/engage/" class="nav-parent" data-path="/engage/">Engage</a>
+        <div class="submenu">
+          <a href="/engage/advisory/">Trust Advisory</a>
+          <a href="/engage/assessment/">Trust Architecture Assessment</a>
+          <a href="/engage/pilot/">Trust Infrastructure Pilot</a>
+          <a href="/engage/partnerships/">Partnerships</a>
+        </div>
+      </div>
+      <a href="/about.html" data-path="/about.html">About</a>
+      <a href="/contact.html" class="cta-link" data-path="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="register">
+  <div class="wrap" style="padding-top:48px;padding-bottom:8px">
+    <span class="eyebrow">Trust and Fraud</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Digital Fraud</h1>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Fraud can, in part, be understood as a failure of trust between participants rather than only a failure of security.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="article-body">
+<p>SABRIC recorded R2.7 billion in confirmed financial crime losses in South Africa
+      during 2024. Although lower than 2023, it remains a recurring cost of trust decisions
+      being made independently and imperfectly by organisations that do not share
+      verification work with one another.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Where identity controls fall short</h2>
+<p>Account takeover is a clear example. Credentials correct, second factor correct,
+      device recognised, behavioural signals within tolerance &mdash; every identity control
+      can return "verified," and the transaction can still be fraudulent. Identity answers
+      who is acting. It does not, on its own, establish whether that person is authorised,
+      whether the claim is still valid, or whether the transaction is appropriate. Fraud
+      finds the gap between those two things.</p>
+      <h2 style="font-size:1.3rem;margin-top:1.6em">Duplication creates opportunity</h2>
+<p>Every organisation that repeats the same verification, independently, is also
+      independently exposed to the same fraud patterns. Shared, reusable trust closes some
+      of that gap by letting the organisation best placed to know something &mdash; a bank
+      confirming an account, a mobile network confirming control of a number &mdash;
+      establish it once rather than have it checked imperfectly many times over.</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Related</span>
+      <h2>Continue reading</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="identity-vs-trust.html" style="text-decoration:none;color:inherit">Identity vs Trust</a></h3>
+        <p>Why passing identity checks doesn't prevent account takeover.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="mno-trust-infrastructure.html" style="text-decoration:none;color:inherit">MNO Trust Infrastructure</a></h3>
+        <p>How mobile network data already supports fraud checks like SIM swap detection.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif"><a href="/solutions/scenarios/financial-services.html" style="text-decoration:none;color:inherit">Financial Services</a></h3>
+        <p>The application of this thinking to banking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Gwirio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/knowledge/">Knowledge</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/engage/">Engage</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
