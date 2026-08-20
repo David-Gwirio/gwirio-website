@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI & Autonomous Transactions — Gwirio</title>
-<meta name="description" content="Governing what an AI system is authorised to process, on whose consent, and for what purpose — using Gwirio's existing certificate framework.">
+<meta name="description" content="Give AI systems the information and authority they need to act.">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -32,8 +32,7 @@
           <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
           <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
           <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
-          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
-          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/consent-information-rights/">Privacy &amp; Compliance</a>
           <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
         </div>
       </div>
@@ -55,36 +54,266 @@
   <div class="wrap" style="padding-top:48px;padding-bottom:8px">
     <span class="eyebrow">Solutions</span>
     <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">AI &amp; Autonomous Transactions</h1>
-    <p class="lede" style="margin-top:14px;max-width:60ch">AI is not Gwirio's starting point. It is part of the world every organisation now has to navigate &mdash; and navigating it well means governing what an AI system is authorised to do with information, not just what it is capable of doing.</p>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Give AI systems the information and authority they need to act</p>
   </div>
 </section>
 <section>
   <div class="wrap">
     <div class="article-body">
-      <h2 style="font-size:1.3rem;margin-top:1.6em">The problem AI adds</h2>
-<p>An AI system that processes personal or organisational information is,
-      functionally, a data processor. It needs the same things any data processor
-      needs before it acts on someone's information: authority to process it, a
-      defined purpose, a scope it cannot exceed, and a way for that authority to be
-      checked and revoked. AI does not remove this requirement &mdash; it just makes
-      the same decision happen far more often, and far faster than a person can
-      review it.</p>
-      <h2 style="font-size:1.3rem;margin-top:1.6em">Governing AI with the same framework, not a separate one</h2>
-<p>Gwirio's certificate-based model already governs authority, purpose, scope
-      and consent for how organisations process personal information &mdash;
-      independently of who or what is doing the processing. Extending that model to
-      an AI system means treating it as a governed party: what it is authorised to
-      process, on whose consent, for what purpose, and for how long, checkable and
-      revocable in the same way as any other certificate. This is an extension of
-      existing Trust Infrastructure, not a separate AI product.</p>
-      <h2 style="font-size:1.3rem;margin-top:1.6em">What this is not</h2>
-<p>Gwirio is not building an AI product, and does not position itself as an AI
-      company. The relevant question for most organisations adopting AI is not
-      technical capability &mdash; it is whether the AI system's access to
-      information is authorised, scoped, and accountable. That is a Trust
-      Infrastructure question, and it is the one Gwirio addresses.</p>
-      <p style="margin-top:2em;font-size:.85rem;color:var(--muted)">This page describes how Gwirio's existing certificate and consent framework applies to AI systems as data processors. It is a proposed application of that framework, not a deployed AI-specific product.</p>
-      <p style="margin-top:1.6em"><a href="mailto:info@gwirio.com?subject=Discuss%20AI%20%26%20Autonomous%20Transactions" class="cta-link" style="display:inline-block;text-decoration:none;border:1px solid var(--line-strong);border-radius:100px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink)">Discuss a Trust Problem</a></p>
+      <p>AI systems are moving beyond answering questions. They are increasingly making
+      decisions, accessing information, interacting with other systems and taking actions
+      on behalf of people and organisations.</p>
+      <p>Gwirio helps organisations establish what an AI system can rely upon, what it is
+      authorised to do, and what evidence exists when it acts.</p>
+      <p>This extends Gwirio's existing approach to identity, information rights,
+      certificates and authority into a world where decisions and transactions may happen
+      without a person reviewing every step.</p>
+      <div style="border-left:3px solid var(--verify);background:var(--paper-raised);padding:18px 22px;margin:28px 0;font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.5">
+        Gwirio is not competing with AI. Gwirio provides the trust controls around what AI is allowed to do.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">Why</h2>
+      <p>Traditional digital systems were largely built around:</p>
+    </div>
+    <div class="trust-flow" style="margin:22px auto">
+      <span>People</span><span class="arrow">&rarr;</span><span>Systems</span><span class="arrow">&rarr;</span><span>People</span>
+    </div>
+    <div class="article-body">
+      <p style="margin-top:18px">We are now moving rapidly towards:</p>
+    </div>
+    <div class="trust-flow trust-flow-new" style="margin:22px auto">
+      <span>People</span><span class="arrow">&rarr;</span><span>Systems</span><span class="arrow">&rarr;</span><span>Systems</span><span class="arrow">&rarr;</span><span>Systems</span><span class="arrow">&rarr;</span><span>People, Products &amp; Risk</span>
+    </div>
+    <div class="article-body">
+      <p>An AI agent may access information from several systems, make a decision and
+      initiate an action in seconds.</p>
+      <p>The technical ability to do something does not mean that the system should do it.</p>
+      <p>An organisation needs to be able to establish:</p>
+      <p>Who does the AI system represent?</p>
+      <p>What information can it access?</p>
+      <p>What information can it rely upon?</p>
+      <p>What is it authorised to do?</p>
+      <p>Who gave it that authority?</p>
+      <p>For what purpose?</p>
+      <p>Are there limits or conditions?</p>
+      <p>When does that authority expire?</p>
+      <p>Can the authority be withdrawn?</p>
+      <p>What happened when the system acted?</p>
+      <p>Authentication answers who or what the system is.</p>
+      <p>It does not necessarily answer whether the system should be trusted to perform a
+      particular action.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">What Gwirio provides</h2>
+      <p>Gwirio can provide the trust infrastructure around AI systems and autonomous
+      transactions. This can include:</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Identity</h3>
+        <p>Establish the identity of the AI system, agent or organisation it represents.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Delegated authority</h3>
+        <p>Record what a person or organisation has authorised an AI system or agent to do.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Information rights</h3>
+        <p>Establish what information the system can access and process, and the basis on which it can do so.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Trusted information</h3>
+        <p>Provide verified information and certificates that an AI system can rely upon when making a decision.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Conditions and limits</h3>
+        <p>Define the scope, purpose, conditions and duration of an authority.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Revocation</h3>
+        <p>Provide a mechanism for authority or rights to be withdrawn when circumstances change.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Evidence</h3>
+        <p>Maintain evidence of the authority, information and conditions associated with an action.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">From capability to authority</h2>
+      <p>An AI system may technically be capable of:</p>
+    </div>
+    <div class="trust-flow" style="margin:22px auto">
+      <span>Accessing information</span><span class="arrow">&rarr;</span><span>making a decision</span><span class="arrow">&rarr;</span><span>taking an action</span>
+    </div>
+    <div class="article-body">
+      <p>Gwirio adds the questions that should come before that action:</p>
+      <p>Is it authorised?</p>
+      <p>Can it rely on this information?</p>
+      <p>Is this within its permitted scope?</p>
+      <p>Does the authority still apply?</p>
+      <p>Can we establish what happened afterwards?</p>
+      <p>This creates a distinction between what an AI system can do and what it is trusted
+      and authorised to do.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">How it works</h2>
+    </div>
+    <div class="chain-vertical">
+      <div class="chain-step">
+        <div class="term">Establish identity</div>
+        <div class="q">Identify the AI system, agent, organisation or person it represents.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">Establish authority</div>
+        <div class="q">Define what the system has been authorised to do and on whose behalf.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">Establish information rights</div>
+        <div class="q">Determine what information it can access, use and rely upon.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">Verify the information</div>
+        <div class="q">Use trusted information and certificates where the decision requires information from another authoritative source.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">Check before acting</div>
+        <div class="q">The relevant authority, conditions and information rights can be checked before an action is permitted.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">Record the evidence</div>
+        <div class="q">Maintain evidence of what authority and information the system relied upon and what action was taken.</div>
+      </div>
+    </div>
+    <div class="trust-flow trust-flow-new" style="margin:22px auto">
+      <span>Identity</span><span class="arrow">&rarr;</span><span>Authority</span><span class="arrow">&rarr;</span><span>Information</span><span class="arrow">&rarr;</span><span>Permission</span><span class="arrow">&rarr;</span><span>Action</span><span class="arrow">&rarr;</span><span>Evidence</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">What value does this provide?</h2>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Safer automation</h3>
+        <p>Allow AI systems to act within defined boundaries rather than relying solely on technical access controls.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Controlled delegation</h3>
+        <p>Give AI systems authority to act on behalf of people and organisations without giving them unrestricted access.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Better information governance</h3>
+        <p>Ensure AI systems do not automatically gain access to information simply because a technical connection exists.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Greater accountability</h3>
+        <p>Establish who authorised an action, what the system was permitted to do and what information it relied upon.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Reduced risk</h3>
+        <p>Limit the potential impact of an AI system acting outside its intended purpose or authority.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Support for autonomous transactions</h3>
+        <p>Provide the trust controls needed when systems begin interacting and transacting directly with other systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">Where it can be used</h2>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">AI agents</h3>
+        <p>Define what an agent can access and what actions it can take on behalf of a person or organisation.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Automated payments</h3>
+        <p>Establish authority and conditions before an AI system initiates or approves a payment.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Procurement</h3>
+        <p>Allow an AI system to purchase goods or services within defined authority and spending limits.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Customer service</h3>
+        <p>Allow AI systems to access customer information and take actions within defined permissions.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Fraud and risk</h3>
+        <p>Allow automated systems to obtain and rely upon verified information before making a risk decision.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Machine-to-machine transactions</h3>
+        <p>Establish identity, authority and permitted actions when systems transact without direct human involvement.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Business processes</h3>
+        <p>Allow AI systems to perform defined tasks while maintaining evidence of the authority under which they acted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">The opportunity</h2>
+      <p>The objective is not to prevent AI systems from acting.</p>
+      <p>It is to make autonomous action more controlled, more transparent and more
+      accountable.</p>
+      <p>As more decisions move from people to systems, organisations will need to
+      establish not only whether a system is connected, but whether it can be trusted to
+      perform a particular action.</p>
+      <p>Gwirio provides the infrastructure to help establish that trust.</p>
+      <p style="margin-top:1.6em">
+        <a href="mailto:info@gwirio.com?subject=Discuss%20an%20AI%20%26%20Autonomous%20Transactions%20Pilot" class="cta-link" style="display:inline-block;text-decoration:none;border:1px solid var(--line-strong);border-radius:100px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink)">Discuss an AI &amp; Autonomous Transactions pilot</a>
+      </p>
     </div>
   </div>
 </section>

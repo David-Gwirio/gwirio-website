@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fraud Prevention — Gwirio Applications</title>
-<meta name="description" content="How reusable trust outcomes from authoritative sources could reduce duplicated, fraud-prone verification.">
+<meta name="description" content="Gwirio can verify the facts behind a transaction.">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -32,8 +32,7 @@
           <a href="/solutions/fraud-risk/">Fraud &amp; Risk</a>
           <a href="/solutions/identity-onboarding/">Identity &amp; Onboarding</a>
           <a href="/solutions/data-lifecycle/">Data Management &amp; Lifecycle</a>
-          <a href="/solutions/consent-information-rights/">Consent &amp; Information Rights</a>
-          <a href="/solutions/trusted-data-exchange/">Trusted Data Exchange</a>
+          <a href="/solutions/consent-information-rights/">Privacy &amp; Compliance</a>
           <a href="/solutions/ai-autonomous-transactions/">AI &amp; Autonomous Transactions</a>
         </div>
       </div>
@@ -55,30 +54,243 @@
   <div class="wrap" style="padding-top:48px;padding-bottom:8px">
     <span class="eyebrow">Applications</span>
     <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:26ch">Fraud Prevention</h1>
-    <p class="lede" style="margin-top:14px;max-width:60ch">Fraud can, in part, be understood as a failure of trust between participants, not only a failure of security controls.</p>
+    <p class="lede" style="margin-top:14px;max-width:60ch">Gwirio can verify the facts behind a transaction</p>
   </div>
 </section>
 <section>
   <div class="wrap">
     <div class="article-body">
-      <h2 style="font-size:1.3rem;margin-top:1.6em">The trust problem</h2>
-<p>SABRIC recorded R2.7 billion in confirmed financial crime losses in South Africa
-      during 2024. Identity controls can all return "verified" &mdash; correct credentials,
-      correct second factor, recognised device &mdash; and a transaction can still be
-      fraudulent, because identity answers only one question while a trust decision depends
-      on several more.</p>
-      <h2 style="font-size:1.3rem;margin-top:1.6em">What trusted outcome is required</h2>
-<p>Confirmation of facts an authoritative organisation already holds &mdash; such as
-      whether a SIM has recently changed, or whether a transaction is consistent with an
-      established banking relationship &mdash; rather than each organisation independently
-      reconstructing the same check.</p>
-      <p style="margin-top:2em;font-size:.85rem;color:var(--muted)">This page does not claim a specific fraud-reduction outcome for any Gwirio deployment. It describes a proposed application of Trust Infrastructure, drawing on published fraud statistics and existing GSMA and banking material.</p>
+      <p>Fraud increasingly involves people, accounts, devices and transactions that may
+      appear legitimate when considered individually.</p>
+      <p>Gwirio provides access to verified data points from authoritative sources that
+      organisations can use to identify potential fraud and make better risk decisions.</p>
+      <p>These data points can include identity, accounts, mobile devices, location,
+      transactions and other relevant events or relationships.</p>
+      <p>Gwirio enables an organisation to ask a specific question and obtain a trusted
+      answer from the organisation that is best placed to answer it &mdash; without
+      necessarily exposing the underlying personal information.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">Why</h2>
+      <p>Many organisations already have sophisticated fraud and risk systems. The problem
+      is that important information needed to make a decision is often held by someone
+      else.</p>
+      <div style="border-left:3px solid var(--line-strong);padding:12px 18px;margin:22px 0;font-size:.88rem;color:var(--muted)">
+        SABRIC recorded R2.7 billion in confirmed financial crime losses in South Africa during 2024.
+        <br><br>
+        This page does not claim a specific fraud-reduction outcome for any Gwirio deployment. It describes a proposed application of Trust Infrastructure, drawing on published fraud statistics and existing GSMA and banking material.
+      </div>
+      <p>A bank may know the customer's transaction history but not whether their SIM was
+      recently changed.</p>
+      <p>An MNO may know what has happened to a mobile number but not whether a transaction
+      is consistent with the customer's banking relationship.</p>
+      <p>A social platform may know whether an account has been associated with a verified
+      person, while another platform may have no reliable way to establish that
+      relationship.</p>
+      <p>Organisations often address these gaps by collecting more information, building
+      integrations and creating copies of data in their own systems.</p>
+      <p>This adds cost and complexity, increases the amount of personal information they
+      hold, and does not necessarily provide greater confidence in the decision.</p>
+      <p>Gwirio provides a different approach:</p>
+    </div>
+    <div class="trust-flow" style="margin:22px auto">
+      <span>Ask the organisation that knows</span><span class="arrow">&rarr;</span><span>receive a trusted answer</span><span class="arrow">&rarr;</span><span>use it in the decision</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">What Gwirio can verify</h2>
+      <p>Gwirio can provide verified data points relating to:</p>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Identity</h3>
+        <p>Is this person who they claim to be?</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Account</h3>
+        <p>Is this an established customer or account relationship?</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Mobile device</h3>
+        <p>Is this device or mobile number associated with the person or account?</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Location</h3>
+        <p>Can a relevant location or presence be verified?</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Events</h3>
+        <p>Did a particular event occur, such as a recent SIM change?</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Relationships</h3>
+        <p>Is there a verified relationship between a person, account, device or organisation?</p>
+      </div>
     </div>
   </div>
 </section>
 <section>
   <div class="wrap">
-    <p><a href="mailto:info@gwirio.com?subject=Discuss%20Fraud%20%26%20Risk" class="cta-link" style="display:inline-block;text-decoration:none;border:1px solid var(--line-strong);border-radius:100px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink)">Discuss a Trust Problem</a></p>
+    <div class="article-body">
+      <p>These individual data points can also be combined. Where multiple independently
+      verified certificates relate to the same person, account or device, Gwirio can use
+      that evidence to establish a stronger trust assessment.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">How it works</h2>
+    </div>
+    <div class="chain-vertical">
+      <div class="chain-step">
+        <div class="term">A question is asked</div>
+        <div class="q">An organisation identifies information that could improve a particular fraud or risk decision.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">The appropriate source verifies it</div>
+        <div class="q">Gwirio obtains the relevant confirmation from an organisation that is authoritative for that information.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">A trusted answer is provided</div>
+        <div class="q">The organisation receives the verified result it needs rather than necessarily receiving the underlying personal information.</div>
+      </div>
+      <div class="chain-arrow-v">&darr;</div>
+      <div class="chain-step">
+        <div class="term">The existing decision process uses it</div>
+        <div class="q">The trusted result can be incorporated into the organisation's existing fraud, risk or transaction systems.</div>
+      </div>
+    </div>
+    <div class="trust-flow trust-flow-new" style="margin:22px auto">
+      <span>Question</span><span class="arrow">&rarr;</span><span>Authoritative source</span><span class="arrow">&rarr;</span><span>Verified answer</span><span class="arrow">&rarr;</span><span>Risk decision</span>
+    </div>
+    <div class="article-body">
+      <p>Gwirio does not need to replace an organisation's existing fraud engine.</p>
+      <p>It provides additional trusted information for the decisions that system already
+      makes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">What value does this provide?</h2>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Better risk decisions</h3>
+        <p>Give fraud and risk systems access to information they cannot reliably establish themselves.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Less unnecessary data</h3>
+        <p>Obtain confirmation of a relevant fact without automatically acquiring and storing the underlying personal information.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Less duplication</h3>
+        <p>Reduce the need for multiple organisations to independently collect and verify the same information.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Faster decisions</h3>
+        <p>Make relevant verified information available when a transaction or other decision is being made.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Stronger evidence</h3>
+        <p>Provide evidence of the information that was relied upon when a risk decision was made.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Greater protection against fraud</h3>
+        <p>Make it harder for fraudulent activity to succeed when identity, account, device and other relevant facts can be independently verified.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">Where it can be used</h2>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="grid-3">
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Banking and payments</h3>
+        <p>Verify additional facts before approving a transaction or other high-risk activity.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Mobile fraud</h3>
+        <p>Use trusted information about SIM changes, mobile numbers and devices as part of existing fraud decisions.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Account takeover</h3>
+        <p>Combine identity, account and device information to establish whether activity is consistent with an established relationship.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Social platforms</h3>
+        <p>Allow a platform or another authorised organisation to establish whether an account is associated with a verified person.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Marketplaces and auctions</h3>
+        <p>Verify buyers and sellers and reduce the opportunity for anonymous or fraudulent transactions.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;font-family:'Fraunces',serif">Digital commerce</h3>
+        <p>Use trusted information about customers, accounts, devices and transactions to strengthen online risk decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="article-body">
+      <h2 style="font-size:1.3rem">Start with a real problem</h2>
+      <p>Gwirio is open to working with organisations that have a specific fraud or risk
+      problem where information from another authoritative source could improve the
+      decision.</p>
+      <p>A pilot can identify:</p>
+      <ul>
+        <li>the decision being made;</li>
+        <li>the information that would improve it;</li>
+        <li>the organisation that can verify that information;</li>
+        <li>the trusted answer required;</li>
+        <li>how the answer can be incorporated into the existing process; and</li>
+        <li>how the result will be measured.</li>
+      </ul>
+      <p>The objective is not to assume that Gwirio will reduce fraud.</p>
+      <div style="border-left:3px solid var(--verify);background:var(--paper-raised);padding:18px 22px;margin:28px 0;font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.5">
+        The objective is to demonstrate whether verified information can improve a real decision.
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <p><a href="mailto:info@gwirio.com?subject=Discuss%20a%20Fraud%20Prevention%20Pilot" class="cta-link" style="display:inline-block;text-decoration:none;border:1px solid var(--line-strong);border-radius:100px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink)">Discuss a fraud prevention pilot</a></p>
   </div>
 </section>
 <section class="alt">
