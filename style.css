@@ -58,14 +58,7 @@ header.site{
 }
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
 .brand-mark{width:30px;height:30px;flex:none}
-.brand-name{
-  font-family:'Fraunces',serif;font-weight:600;
-  font-size:clamp(1.05rem,2.6vw,2.15rem);
-  letter-spacing:-0.01em;text-transform:uppercase;white-space:nowrap;
-}
-@media (max-width:480px){
-  .brand-name{font-size:.95rem;letter-spacing:0}
-}
+.brand-name{font-family:'Fraunces',serif;font-size:1.28rem;font-weight:600;letter-spacing:-0.01em}
 
 nav.site-nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 nav.site-nav a{
@@ -141,13 +134,23 @@ nav.site-nav a.cta-link:hover{border-color:var(--verify);background:var(--verify
 .hero p.lede{font-size:1.08rem;color:var(--muted);max-width:58ch;margin:18px 0 0}
 
 .hero-graphic{
-  background-image:url('/assets/hero-network.png');
-  background-repeat:no-repeat;
-  background-position:right top;
-  background-size:720px auto;
+  position:relative;
 }
+.hero-graphic::before{
+  content:"";
+  position:absolute;inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-repeat:no-repeat,no-repeat;
+  background-position:center top,right top;
+  background-size:100% 100%,1500px auto;
+  background-image:
+    linear-gradient(to bottom, rgba(238,242,245,.72) 0%, rgba(238,242,245,.72) 60%, var(--paper) 100%),
+    url('/assets/hero-network.png');
+}
+.hero-graphic > .wrap{position:relative;z-index:1}
 @media (max-width:900px){
-  .hero-graphic{background-image:none}
+  .hero-graphic::before{display:none}
 }
 
 .hero-build{
@@ -177,32 +180,6 @@ nav.site-nav a.cta-link:hover{border-color:var(--verify);background:var(--verify
   font-family:'Fraunces',serif;font-size:1.4rem;color:var(--ink);
   margin:30px 0 6px;
 }
-
-/* ---- Intro-section transition line (e.g. Knowledge landing hero) ---- */
-.section-lead{
-  font-family:'Fraunces',serif;font-weight:500;font-size:1.3rem;color:var(--ink);
-  margin:26px 0 4px;line-height:1.3;
-}
-
-/* ---- Editorial two-column section (e.g. BOK: Questions / Help us Build It / Trust Infrastructure) ---- */
-.kb-section{
-  display:grid;grid-template-columns:28% 1fr;gap:32px;align-items:start;
-}
-.kb-section-title{
-  font-family:'Fraunces',serif;font-weight:500;
-  font-size:clamp(1.75rem,3vw,2.2rem);line-height:1.15;
-  color:var(--ink);margin:0;
-}
-@media (max-width:800px){
-  .kb-section{grid-template-columns:1fr;gap:14px}
-}
-
-/* ---- Vertical labelled step chain (e.g. Identity -> Authority -> ... -> Accountability) ---- */
-.chain-vertical{margin:26px 0}
-.chain-step{padding:6px 0}
-.chain-step .term{font-family:'Fraunces',serif;font-weight:600;font-size:1.18rem;color:var(--ink)}
-.chain-step .q{color:var(--muted);font-size:.96rem;margin-top:2px}
-.chain-arrow-v{color:var(--verify);font-family:'IBM Plex Mono',monospace;font-size:1rem;padding:4px 0 4px 2px}
 
 /* ---- Seal / signature ---- */
 .seal-stamp{
@@ -289,9 +266,3 @@ footer.site{border-top:1px solid var(--line);padding:34px 0;background:var(--pap
 
 .logo-icon{height:34px;width:auto;display:block}
 .hero-mark{width:120px;margin-bottom:22px}
-
-/* ---- Simple data table (e.g. pilot success measures) ---- */
-.data-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:.92rem}
-.data-table th,.data-table td{text-align:left;padding:10px 16px;border-bottom:1px solid var(--line)}
-.data-table th{font-family:'IBM Plex Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:500}
-.data-table td:not(:first-child),.data-table th:not(:first-child){text-align:right}
